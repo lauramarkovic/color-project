@@ -1,7 +1,7 @@
 import chroma from "chroma-js";
 import sizes from "./sizes";
 
-export default {
+const styles = {
     colorBox: {
         width: "20%",
         height: props => (props.showingFullPalette ? "25%" : "50%"),
@@ -27,7 +27,7 @@ export default {
         }
     },
     copyText: {
-        color: props => 
+        color: props =>
             chroma(props.background).luminance() >= 0.5 ? "rgba(0,0,0,0.5)" : "white"
     },
     colorName: {
@@ -46,7 +46,7 @@ export default {
         height: "30px",
         textAlign: "center",
         lineHeight: "30px",
-        textTransform: "uppercase"    
+        textTransform: "uppercase"
     },
     copyButton: {
         color: props =>
@@ -78,7 +78,7 @@ export default {
         color: "black",
         letterSpacing: "1px",
         textTransform: "uppercase",
-        fontSize: "12px"    
+        fontSize: "12px"
     },
     copyOverlay: {
         opacity: "0",
@@ -118,7 +118,7 @@ export default {
             padding: "1rem",
             textTransform: "uppercase",
         },
-        [sizes.down("xs")]: {
+        [sizes.down("xs")]: {
             fontSize: "6rem"
         },
         "& p": {
@@ -133,4 +133,6 @@ export default {
         transition: "all 0.4s ease-in-out",
         transitionDelay: "0.3s"
     }
-}
+};
+
+export default styles;

@@ -1,4 +1,4 @@
-export default {
+const styles = {
     root: {
         backgroundColor: "white",
         border: "1px solid black",
@@ -28,7 +28,7 @@ export default {
         fontSize: "1rem",
         position: "relative"
     },
-    emoji: {
+    emoji: {
         marginLeft: "0.5rem",
         fontSize: "1.5rem"
     },
@@ -52,4 +52,6 @@ export default {
         zIndex: 10,
         opacity: 0
     }
-}
+};
+
+export default styles;

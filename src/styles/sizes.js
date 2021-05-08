@@ -1,4 +1,4 @@
-export default {
+const sizes = {
   up() {
 
   },
@@ -12,4 +12,6 @@ export default {
     }
     return `@media (max-width: ${sizes[size]})`
   }
-}
+};
+
+export default sizes;
